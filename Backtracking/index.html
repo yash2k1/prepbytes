@@ -591,8 +591,9 @@ static boolean no(BinaryTree node) {
         </div>
 <div id="Trick#4">
     <p>If an Exception is thrown, you can get information about just where it happened by sending it the message printStackTrace(PrintStream). Since an Exception is an object like any other, you can create and throw your own Exceptions. However, Java programmers don't always realize that you can create an Exception without throwing it. For example, the following code</p>
-    <font color="#007EB4">
+    <font color="#007EB4"><pre>
         new Exception("Checkpoint Charlie").printStackTrace(System.out);
+    </pre>
     </font>
     <p>will print out a message something like this, and the program will then continue normally. That is, the above code just acts like a print statement.</p>
     <font color="#007EB4">
